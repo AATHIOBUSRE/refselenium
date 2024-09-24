@@ -78,3 +78,4 @@ except KeyboardInterrupt:
 
 # Close the browser before exiting
 driver.quit()
+#git function of checkbranch
