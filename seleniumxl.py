@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager  # WebDriver Manager
 import re  # Importing the regular expressions module
-
+#this is branch 2
 # Load the CSV file and read the words
 excel_file_path = "csvfile.csv"  # Path to your CSV file
 
