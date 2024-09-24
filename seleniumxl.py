@@ -8,17 +8,22 @@ import re  # Importing the regular expressions module
 
 # Load the CSV file and read the words
 excel_file_path = "csvfile.csv"  # Path to your CSV file
+
 # Set up options for Chrome
 chrome_options = Options()
 chrome_options.add_argument("--ignore-certificate-errors")  # Ignore SSL errors
 chrome_options.add_argument("--start-maximized")  # Start maximized (optional)
+
 # Set up Selenium with WebDriver Manager and options
 service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
+
 # Open the website
 driver.get("https://www.primemoversolutions.in/")
+
 # Wait for the page to load
 time.sleep(1)
+
 # Function to escape special characters for regex
 def escape_special_characters(word):
     return re.escape(word)
