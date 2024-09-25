@@ -5,19 +5,16 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager  # WebDriver Manager
 import re  # Importing the regular expressions module
-
+#this is checkbranch
 # Load the CSV file and read the words
 excel_file_path = "csvfile.csv"  # Path to your CSV file
-
 # Set up options for Chrome
 chrome_options = Options()
 chrome_options.add_argument("--ignore-certificate-errors")  # Ignore SSL errors
 chrome_options.add_argument("--start-maximized")  # Start maximized (optional)
-
 # Set up Selenium with WebDriver Manager and options
 service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
-
 # Open the website
 driver.get("https://www.primemoversolutions.in/")
 
@@ -81,4 +78,6 @@ except KeyboardInterrupt:
 
 # Close the browser before exiting
 driver.quit()
+
 #this in  a branch1 
+
