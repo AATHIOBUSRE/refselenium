@@ -8,6 +8,7 @@ import re  # Importing the regular expressions module
 #this is checkbranch
 # Load the CSV file and read the words
 excel_file_path = "csvfile.csv"  # Path to your CSV file
+
 # Set up options for Chrome
 chrome_options = Options()
 chrome_options.add_argument("--ignore-certificate-errors")  # Ignore SSL errors
